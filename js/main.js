@@ -165,6 +165,8 @@
         }
     });
 
+    
+
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -188,4 +190,6 @@
 
 
 })(jQuery);
+
+
 
