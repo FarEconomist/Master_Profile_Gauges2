@@ -363,6 +363,39 @@
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
+
+    .navbar.navbar-expand-lg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-light .navbar-brand {
+        display: flex;
+        align-items: center;
+        flex-shrink: 1;
+        min-width: 0; /* allows text to shrink */
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 38px;
+        margin-right: 5px;
+        flex-shrink: 0;
+    }
+
+    .navbar-light .navbar-brand h1 {
+        font-size: 0.95rem;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .navbar-toggler {
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
 }
 
 @media (min-width: 992px) {
