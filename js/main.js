@@ -191,5 +191,22 @@
 
 })(jQuery);
 
+function sendEmail() {
+  emailjs.send("service_xsxd3vd", "template_0en0r7r", {
+    from_name: document.getElementById("c_name").value,
+    from_email: document.getElementById("c_email").value,
+    phone: document.getElementById("c_number").value,
+    subject: document.getElementById("c_subject").value,
+    message: document.getElementById("c_message").value
+  }).then(
+    () => {
+      alert("✅ Thank you for your enquiry. We will connect with you ASAP.");
+      document.querySelector("form").reset();
+    },
+    (error) => {
+      alert("❌ Failed to send: " + JSON.stringify(error));
+    }
+  );
+}
 
 
