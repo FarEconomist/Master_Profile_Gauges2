@@ -9,6 +9,32 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;  /* adjust to your navbar height */
+}
+
+/* Logo size */
+.navbar-brand img {
+  max-height: 55px;
+}
+
+/* Navbar toggler (hamburger) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Dropdown hover (desktop) */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
 
  
 .feature-card {
@@ -171,8 +197,8 @@
 }
 .btn.btn-primary {
     color: var(--bs-white);
-    background-color: #dc3545; /* Red background */
-    border-color: #dc3545;     /* Red border */
+    background-color: #dc3545; /* #dc3545 background */
+    border-color: #dc3545;     /* #dc3545 border */
 }
 
 
@@ -187,7 +213,7 @@
 
 /* Customer Logo Image */
 .customer-logo img {
-    width: 180px;  /* reduced size */
+    width: 180px;  /* #dc3545uced size */
     height: 60px;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -307,12 +333,12 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    max-height: 80px;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 55px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -1116,22 +1142,22 @@
 /*** copyright end ***/
 
 .blog-item .btn {
-    color: red !important;
+    color: #dc3545 !important;
     background-color: transparent;
-    border: 2px solid red;
+    border: 2px solid #dc3545;
     transition: all 0.3s ease;
 }
 
 .blog-item .btn:hover {
     color: #fff !important;
-    background-color: red;
-    border-color: red;
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .blog-item .btn:hover {
     color: #181515 !important;
-    background-color: red;
-    border-color: red;
+    background-color: #dc3545;
+    border-color: #dc3545;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
 }
@@ -1208,7 +1234,7 @@
 }
 
 .product-card:hover h5 {
-    color: #ff0000; /* red on hover */
+    color: #ff0000; /* #dc3545 on hover */
 }
 /* Achievements Image Hover */
 .achievement-card {
@@ -1249,4 +1275,11 @@
 
 .achievement-card:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.counter::before {
+    content: "+";
+    margin-right: 4px;   /* spacing between + and number */
+    color: #dc3545;          /* same color as your number */
+    font-weight: bold;
 }
